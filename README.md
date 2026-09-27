@@ -1,4 +1,4 @@
-# Andar Claro
+# VISION WHITOUT LIMITS
 
 Tienda en línea de bastones guía y lentes especializados, construida como
 proyecto full-stack con **React (Vite)**, **Node.js/Express** y **PostgreSQL**,
@@ -11,7 +11,7 @@ con la accesibilidad para lectores de pantalla como requisito central.
 ## Estructura del proyecto
 
 ```
-andar-claro/
+VISION WHITOUT LIMITS/
 ├── backend/     # API REST (Express + PostgreSQL)
 └── frontend/    # Aplicación React (Vite)
 ```
@@ -27,11 +27,10 @@ andar-claro/
 createdb vision_without_limits
 cd backend
 cp .env.example .env
-# Edita .env con tus credenciales de PostgreSQL
 psql -d vision_without_limits -f db/schema.sql
 npm install
 npm run seed   # carga el catálogo inicial de bastones y lentes
-npm run create-admin -- Tu Nombre TuApellido tu-correo@ejemplo.com unaContraseñaSegura   # crea tu cuenta de administrador
+npm run create-admin -- Tu Nombre TuApellido tu-correo@ejemplo.com unaContraseñaSegura  
 ```
 
 > ⚠️ Si ya tenías una tabla `users` de antes de que se agregara nombre/apellido y foto de
