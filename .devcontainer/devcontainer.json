@@ -1,0 +1,44 @@
+mkdir -p "/home/claude/vwl_extracted/Vision Whitout limits/.devcontainer"
+cat > "/home/claude/vwl_extracted/Vision Whitout limits/.devcontainer/devcontainer.json" << 'EOF'
+{
+  "name": "Vision Without Limits",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/postgresql-client:1": {}
+  },
+  "forwardPorts": [4000, 5173],
+  "portsAttributes": {
+    "4000": {
+      "label": "Backend (API)",
+      "visibility": "public"
+    },
+    "5173": {
+      "label": "Frontend",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "cd backend && npm install && cd ../frontend && npm install"
+}
+EOF
+cat "/home/claude/vwl_extracted/Vision Whitout limits/.devcontainer/devcontainer.json"
+Salida
+
+{
+  "name": "Vision Without Limits",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:20",
+  "features": {
+    "ghcr.io/devcontainers/features/postgresql-client:1": {}
+  },
+  "forwardPorts": [4000, 5173],
+  "portsAttributes": {
+    "4000": {
+      "label": "Backend (API)",
+      "visibility": "public"
+    },
+    "5173": {
+      "label": "Frontend",
+      "visibility": "public"
+    }
+  },
+  "postCreateCommand": "cd backend && npm install && cd ../frontend && npm install"
+}
